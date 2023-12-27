@@ -5,17 +5,7 @@
     <link rel="stylesheet" href="pagedesign.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ev Arkadaşım - Find Your Housemate in Istanbul</title>
-    <script>
-        function playSound(src,volume) {
-            var audio = new Audio(src);
-            audio.loop = true;
-            audio.volume = volume;
-            audio.play().catch(e => console.error("Error playing sound:", e));
-        }
-        document.getElementById('playButton').addEventListener('click', function() {
-        playSound('music.mp3', 0.1);
-    });
-    </script>
+    
 </head>
 <body>
     
@@ -52,6 +42,17 @@
             console.log("Searching for:", searchTerm);
             // You would typically make an AJAX request here
         }
+    </script>
+    <script>
+        function playSound(src,volume) {
+            var audio = new Audio(src);
+            audio.loop = true;
+            audio.volume = volume;
+            audio.play().catch(e => console.error("Error playing sound:", e));
+        }
+        document.getElementById('playButton').addEventListener('click', function() {
+        playSound('music.mp3', 0.1);
+    });
     </script>
 
 </body>
