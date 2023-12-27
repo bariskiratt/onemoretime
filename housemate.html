@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pagedesign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev Arkadaşım - Find Your Housemate in Istanbul</title>
+    <script>
+        function playSound(src,volume) {
+            var audio = new Audio(src);
+            audio.loop = true;
+            audio.volume = volume;
+            audio.play().catch(e => console.error("Error playing sound:", e));
+        }
+        playSound('music.mp3',0.1)
+    </script>
+</head>
+<body>
+    
+    <div class="header">
+        <a href="housemate.html"> 
+            <span style="font-size: 20px; font-weight: bold;">BİLGEBARIŞREİS.COM</span>
+        </a>
+        <a href="form.html" style="float:right; padding: 10px;">Formu Doldur</a>
+
+    </div>
+
+    <div class="search-area">
+        <div class="search-box">
+            <input type="text" placeholder="Search by university, area, or preferences...">
+            <button onclick="search()">Ara</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to Ev Arkadaşım!</h1>
+        <p>Start your search to find the perfect housemate in Istanbul. Whether you're a student, a professional, or just looking for a new place to call home, we can help you find the right match.</p>
+        <!-- Content can be dynamically loaded here -->
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2023 bilgebarisreis.com. All rights reserved.</p>
+    </div>
+    
+    <script>
+        function search() {
+            // Placeholder for search functionality
+            var searchTerm = document.querySelector('.search-box input[type="text"]').value;
+            console.log("Searching for:", searchTerm);
+            // You would typically make an AJAX request here
+        }
+    </script>
+
+</body>
+</html>
