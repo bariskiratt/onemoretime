@@ -1,0 +1,41 @@
+<head>
+
+    <link rel="stylesheet" href="pagedesign.css">
+    <style>
+        label {
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+
+<div class="header">
+    <a href="housemate.html"> 
+        <span style="font-size: 20px; font-weight: bold;">BİLGEBARIŞREİS.COM</span>
+    </a>
+    <a href="form.html" style="float:right; padding: 10px;">Formu Doldur</a>
+
+</div>
+
+
+
+<div id="formSite">
+    <h2> Formu doldur </h2>
+    <form action="http://www.foo.com" method="post">
+        <label for="Şehir">Şehir:</label><br>
+        <select id="şehir" name="şehir">
+            <option value="İstanbul">İstanbul</option>
+        </select><br><br> 
+    
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+        required><br><br>
+        
+    <label for="adres">Adres:</label><br>
+        <textarea id="adres" name="adres" required></textarea><br><br>
+    
+        <input type="submit" value="Submit">
+        
+    </form>
+
+    </div>
