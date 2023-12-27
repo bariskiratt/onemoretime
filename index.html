@@ -12,7 +12,9 @@
             audio.volume = volume;
             audio.play().catch(e => console.error("Error playing sound:", e));
         }
-        playSound('music.mp3',0.1)
+        document.getElementById('playButton').addEventListener('click', function() {
+        playSound('music.mp3', 0.1);
+    });
     </script>
 </head>
 <body>
@@ -40,6 +42,7 @@
     
     <div class="footer">
         <p>&copy; 2023 bilgebarisreis.com. All rights reserved.</p>
+        <button id="playButton">One More Time</button>
     </div>
     
     <script>
